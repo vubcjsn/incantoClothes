@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import BannerHeader from './BannerHeader';
+import BannerHeader from '../components/BannerHeader';
 import Image from 'next/image';
 import Logo from '../../public/image/logo incanto 2.png';
 import IconHeader from './IconHeader';
