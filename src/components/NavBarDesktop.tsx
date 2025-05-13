@@ -8,9 +8,18 @@ import React from 'react';
 import Image from 'next/image';
 import Logo from '../../public/image/logo incanto 2.png';
 
-import IconHeader from '../components/IconHeader';
+import IconHeader from './IconHeader';
 
 import BannerHeader from './BannerHeader';
+
+const options = [
+  'Collection',
+  'New In',
+  'Modiweek',
+  'Plus Size',
+  'Sustainability',
+];
+
 const NavBarDesktop = () => {
   return (
     <>
@@ -20,7 +29,6 @@ const NavBarDesktop = () => {
           backgroundColor: '#ffff',
           boxShadow: 'none',
           color: '#404040',
-          padding: '0px',
         }}
       >
         <BannerHeader />
@@ -47,11 +55,9 @@ const NavBarDesktop = () => {
                 gap: { xs: 2, sm: 3, md: 4, lg: 6 },
               }}
             >
-              <ListItemText primary="Collection" />
-              <ListItemText primary="New In" />
-              <ListItemText primary="Modiweek" />
-              <ListItemText primary="Plus Size" />
-              <ListItemText primary="Sustainability" />
+              {options.map((option) => (
+                <ListItemText primary={option} key={option} />
+              ))}
             </List>
           </Box>
 

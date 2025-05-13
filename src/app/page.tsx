@@ -1,7 +1,7 @@
 'use client';
 
 import NavBar from '../components/NavBar';
-import BannerHeader from '../components/BannerHeader';
+import BestSellers from '../components/BestSellers';
 import { Container } from '@mui/material';
 import HeroSection from '../components/HeroSection';
 export default function Home() {
@@ -10,6 +10,9 @@ export default function Home() {
       {' '}
       <NavBar />
       <HeroSection />
+      <Container>
+        <BestSellers />
+      </Container>
     </>
   );
 }

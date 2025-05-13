@@ -20,7 +20,7 @@ const NavBarMobile = () => {
       <Toolbar
         sx={{
           color: '#000000',
-          p: 0,
+
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
