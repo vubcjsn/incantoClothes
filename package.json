@@ -40,17 +40,20 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.1.6",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^20.17.46",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "@types/swiper": "^5.4.3",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9.26.0",
     "eslint-config-next": "^15.3.2",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
-    "tailwindcss": "^4",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.6",
     "typescript": "^5.8.3"
   }
 }
