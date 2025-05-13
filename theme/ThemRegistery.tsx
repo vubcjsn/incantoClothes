@@ -20,9 +20,6 @@ const themeOptions: ThemeOptions = {
       default: '#ffff',
     },
 
-    primary: {
-      main: '#0C0C0C',
-    },
     text: {
       primary: '#0C0C0C',
       secondary: '#fff',

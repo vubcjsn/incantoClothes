@@ -2,14 +2,14 @@
 
 import NavBar from '../components/NavBar';
 import BannerHeader from '../components/BannerHeader';
-import { AppBar, Container, Toolbar } from '@mui/material';
+import { Container } from '@mui/material';
+import HeroSection from '../components/HeroSection';
 export default function Home() {
   return (
     <>
-      <BannerHeader />
-      <Container maxWidth="xl">
-        <NavBar />
-      </Container>
+      {' '}
+      <NavBar />
+      <HeroSection />
     </>
   );
 }

@@ -1,52 +1,50 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  List,
-  ListItemText,
-  MenuItem,
-  Toolbar,
-  Typography,
-  styled,
-} from '@mui/material';
+import { AppBar } from '@mui/material';
+import { List } from '@mui/material';
+import { ListItemText } from '@mui/material';
+import { Toolbar } from '@mui/material';
+import { Box } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import Logo from '../../public/image/logo incanto 2.png';
-import Menu from '@mui/material/Menu';
-import IconHeader from './IconHeader';
 
-const StyledAppBar = styled(AppBar)({
-  backgroundColor: 'transparent',
-  boxShadow: 'none',
-  color: '#404040',
-  display: 'flex',
-});
+import IconHeader from '../components/IconHeader';
 
-const ListItems = styled(List)({
-  color: '#000000',
-});
-
+import BannerHeader from './BannerHeader';
 const NavBarDesktop = () => {
   return (
     <>
-      <StyledAppBar position="sticky">
+      <AppBar
+        position="sticky"
+        sx={{
+          backgroundColor: '#ffff',
+          boxShadow: 'none',
+          color: '#404040',
+          padding: '0px',
+        }}
+      >
+        <BannerHeader />
         <Toolbar
           sx={{
             display: 'flex',
-            justifyContent: 'space-between',
+
             alignItems: 'center',
+            justifyContent: 'space-between',
+            marginLeft: '60px',
+            marginRight: '60px',
+            paddingTop: '10px',
+            paddingBottom: '10px',
           }}
         >
           <Box>
             <Image src={Logo} alt="Logo for page" width={184} height={46} />
           </Box>
 
-          <Box sx={{ marginLeft: 'auto' }}>
+          <Box>
             <List
               sx={{
                 display: 'flex',
-                gap: 6,
+                gap: { xs: 2, sm: 3, md: 4, lg: 6 },
               }}
             >
               <ListItemText primary="Collection" />
@@ -57,9 +55,11 @@ const NavBarDesktop = () => {
             </List>
           </Box>
 
-          <IconHeader />
+          <Box>
+            <IconHeader />
+          </Box>
         </Toolbar>
-      </StyledAppBar>
+      </AppBar>
     </>
   );
 };
