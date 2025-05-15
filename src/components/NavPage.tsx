@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import BannerHeader from '../components/BannerHeader';
 import Image from 'next/image';
-import Logo from '../../public/image/logo incanto 2.png';
+import Logo from '../../public/image/LogoTrue.png';
 import IconHeader from './IconHeader';
 
 function NavPage() {

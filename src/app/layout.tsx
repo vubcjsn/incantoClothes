@@ -1,5 +1,6 @@
 import './globals.css';
-import ThemeRegistry from '../../theme/ThemRegistery';
+import ThemeRegistry from '../../Theme/ThemeRegistry';
+
 export const metadata = {
   title: 'E-commrece Women Clothing',
   description: 'A E-commerece clothing for Women',
@@ -12,9 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ThemeRegistry>
-        <body>{children}</body>
-      </ThemeRegistry>
+      <body>
+        <ThemeRegistry>{children}</ThemeRegistry>
+      </body>
     </html>
   );
 }
